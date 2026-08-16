@@ -54,11 +54,11 @@ export function ProjectCard({ item, onOpenProject, onOpenPreview }: ProjectCardP
           </div>
           <div className="project-card__actions">
             {showInteractionCta ? (
-              <button aria-label={`查看 ${item.title} 交互稿`} className="project-card__interaction-button" onClick={(event) => { event.stopPropagation(); onOpenPreview(item) }} type="button">
+              <button aria-label={`查看 ${item.title} 交互稿`} className="project-card__interaction-button" data-tooltip={`查看 ${item.title} 交互稿`} onClick={(event) => { event.stopPropagation(); onOpenPreview(item) }} type="button">
                 <Eye aria-hidden="true" size={15} strokeWidth={1.8} /> 查看交互稿
               </button>
             ) : null}
-            <button aria-label={`查看详情 ${item.title}`} onClick={(event) => { event.stopPropagation(); openProject() }} type="button">
+            <button aria-label={`${item.ctaLabel} ${item.title}`} data-tooltip={`${item.ctaLabel}`} onClick={(event) => { event.stopPropagation(); openProject() }} type="button">
                 {item.ctaLabel}
                 <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.8} />
             </button>
