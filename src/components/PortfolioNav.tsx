@@ -17,6 +17,10 @@ export function PortfolioNav({ onScrollTo }: PortfolioNavProps) {
     <nav aria-label="主导航" className="portfolio-nav">
       <button aria-label="返回首页" className="portfolio-nav__brand" onClick={() => onScrollTo('top')} type="button">
         <img alt="熊家卫头像" src="/images/portfolio/xiong-avatar.jpg" />
+        <div className="portfolio-nav__qr">
+          <span className="portfolio-nav__qr-label">微信扫码</span>
+          <img alt="微信二维码" src="/images/portfolio/wechat-qr.jpg" />
+        </div>
       </button>
       <div className="portfolio-nav__links">
         {navigationItems.map(({ id, label, Icon }) => (

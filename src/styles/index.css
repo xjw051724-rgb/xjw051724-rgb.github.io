@@ -80,7 +80,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 @keyframes snow-cursor-pulse { 0%, 100% { transform: scale(.88); opacity: .25; } 50% { transform: scale(1.12); opacity: .78; } }
 @keyframes snow-cursor-spin { to { transform: rotate(360deg); } }
 
-.scroll-prompt { position: absolute; z-index: 6; bottom: 56px; left: 50%; display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(255, 255, 255, .78); border-radius: 999px; padding: 8px 12px; color: #4a79ab; background: rgba(248, 252, 255, .55); box-shadow: 0 7px 20px rgba(43, 120, 202, .11); font-size: .68rem; font-weight: 780; letter-spacing: .08em; backdrop-filter: blur(8px); cursor: pointer; transform: translateX(-50%); }
+.scroll-prompt { position: absolute; z-index: 6; bottom: clamp(22px, 4vh, 44px); left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(255, 255, 255, .78); border-radius: 999px; padding: 8px 12px; color: #4a79ab; background: rgba(248, 252, 255, .55); box-shadow: 0 7px 20px rgba(43, 120, 202, .11); font-size: .68rem; font-weight: 780; letter-spacing: .08em; backdrop-filter: blur(8px); cursor: pointer; }
 .scroll-prompt svg:last-child { animation: scroll-prompt-bounce 1.3s ease-in-out infinite; }
 .scroll-prompt:hover { color: #126dd9; background: rgba(255, 255, 255, .86); animation-play-state: paused; }
 @keyframes scroll-prompt-bounce { 0%, 100% { transform: translateY(-1px); } 50% { transform: translateY(2px); } }
@@ -99,8 +99,14 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
   transform: translateX(-50%);
 }
 
-.portfolio-nav__brand { justify-self: start; padding: 0 !important; }
+.portfolio-nav__brand { position: relative; justify-self: start; padding: 0 !important; }
 .portfolio-nav__brand img { display: block; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, .78); border-radius: 50%; object-fit: cover; box-shadow: 0 8px 20px rgba(28, 89, 150, .14); }
+.portfolio-nav__qr { position: absolute; top: -2px; left: calc(100% + 14px); z-index: 40; width: 160px; padding: 10px 10px 12px; border-radius: 14px; background: #ffffff; box-shadow: 0 12px 34px rgba(28, 89, 150, .18); opacity: 0; pointer-events: none; transform: translateY(-6px); transition: opacity .24s ease, transform .24s ease; }
+.portfolio-nav__qr::before { position: absolute; top: 14px; left: -6px; width: 12px; height: 12px; content: ""; transform: rotate(45deg); background: #ffffff; box-shadow: -3px 3px 8px rgba(28, 89, 150, .08); }
+.portfolio-nav__qr-label { display: block; margin-bottom: 6px; color: #2c6fc4; font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-align: center; }
+.portfolio-nav__qr img { position: relative; width: 100%; height: auto; border: 0; border-radius: 8px; box-shadow: none; }
+.portfolio-nav__brand:hover .portfolio-nav__qr,
+.portfolio-nav__brand:focus-within .portfolio-nav__qr { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .portfolio-nav__sound { justify-self: end; }
 .portfolio-nav__links { justify-self: center; display: flex; align-items: center; gap: clamp(18px, 2.2vw, 42px); }
 .portfolio-nav button {
@@ -372,7 +378,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
   .career-card { min-height: 182px; padding: 16px; }
   .career-card__company { margin-top: 12px; }
   .career-card__description { margin-top: 12px; font-size: .72rem; line-height: 1.64; }
-  .scroll-prompt { bottom: 28px; padding: 6px 10px; font-size: .62rem; }
+  .scroll-prompt { padding: 6px 10px; font-size: .62rem; }
 }
 
 @media (max-width: 760px) {
