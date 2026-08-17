@@ -80,7 +80,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 @keyframes snow-cursor-pulse { 0%, 100% { transform: scale(.88); opacity: .25; } 50% { transform: scale(1.12); opacity: .78; } }
 @keyframes snow-cursor-spin { to { transform: rotate(360deg); } }
 
-.scroll-prompt { position: absolute; z-index: 6; bottom: clamp(22px, 4vh, 44px); left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(255, 255, 255, .78); border-radius: 999px; padding: 8px 12px; color: #4a79ab; background: rgba(248, 252, 255, .55); box-shadow: 0 7px 20px rgba(43, 120, 202, .11); font-size: .68rem; font-weight: 780; letter-spacing: .08em; backdrop-filter: blur(8px); cursor: pointer; }
+.scroll-prompt { position: relative; z-index: 6; display: inline-flex; align-items: center; align-self: center; gap: 6px; margin-top: clamp(24px, 5vh, 56px); border: 1px solid rgba(255, 255, 255, .78); border-radius: 999px; padding: 8px 12px; color: #4a79ab; background: rgba(248, 252, 255, .55); box-shadow: 0 7px 20px rgba(43, 120, 202, .11); font-size: .68rem; font-weight: 780; letter-spacing: .08em; backdrop-filter: blur(8px); cursor: pointer; }
 .scroll-prompt svg:last-child { animation: scroll-prompt-bounce 1.3s ease-in-out infinite; }
 .scroll-prompt:hover { color: #126dd9; background: rgba(255, 255, 255, .86); animation-play-state: paused; }
 @keyframes scroll-prompt-bounce { 0%, 100% { transform: translateY(-1px); } 50% { transform: translateY(2px); } }
