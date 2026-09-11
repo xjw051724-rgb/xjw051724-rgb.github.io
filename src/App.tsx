@@ -19,7 +19,14 @@ const navigateToProject = (project: PortfolioProject) => {
 
 function PortfolioSurface() {
   const { content } = usePortfolioContent()
-  const [pathname, setPathname] = useState(() => window.location.pathname)
+  const [pathname, setPathname] = useState(() => {
+    const redirect = new URLSearchParams(window.location.search).get('p')
+    if (redirect) {
+      window.history.replaceState({}, '', redirect)
+      return redirect
+    }
+    return window.location.pathname
+  })
   const [previewedProject, setPreviewedProject] = useState<PortfolioProject | null>(null)
   const detailProject = content.allProjects.find((project) => pathname === `/projects/${project.id}`)
 

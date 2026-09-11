@@ -101,6 +101,10 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 
 .portfolio-nav__brand { position: relative; justify-self: start; padding: 0 !important; }
 .portfolio-nav__brand img { display: block; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, .78); border-radius: 50%; object-fit: cover; box-shadow: 0 8px 20px rgba(28, 89, 150, .14); }
+.portfolio-nav__qr { position: absolute; top: calc(100% + 12px); left: 50%; z-index: 50; width: 150px; padding: 10px 10px 12px; border-radius: 14px; background: #ffffff; box-shadow: 0 12px 34px rgba(28, 89, 150, .18); opacity: 0; pointer-events: none; transform: translateX(-50%) translateY(-6px); transition: opacity .24s ease, transform .24s ease; }
+.portfolio-nav__qr-label { display: block; margin-bottom: 6px; color: #2c6fc4; font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-align: center; }
+.portfolio-nav__qr img { width: 100%; height: auto; border: 0; border-radius: 8px; box-shadow: none; }
+.portfolio-nav__brand:hover .portfolio-nav__qr { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
 .portfolio-nav__sound { justify-self: end; }
 .portfolio-nav__links { justify-self: center; display: flex; align-items: center; gap: clamp(18px, 2.2vw, 42px); }
 .portfolio-nav button {
