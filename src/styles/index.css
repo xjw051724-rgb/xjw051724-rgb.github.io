@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  --shell-max: 1440px;
+  --shell-gutter: clamp(48px, 10vw, 220px);
   color: #10233f;
   background: #ffffff;
   font-family: Inter, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -17,7 +19,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 .portfolio-app { overflow-x: clip; background: #ffffff; color: #10233f; }
 
 .portfolio-shell {
-  width: min(100% - clamp(40px, 6vw, 112px), 2100px);
+  width: min(100% - var(--shell-gutter), var(--shell-max));
   margin-inline: auto;
 }
 
@@ -91,7 +93,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
   top: 48px;
   left: 50%;
   display: grid;
-  width: min(100% - clamp(40px, 6vw, 112px), 2100px);
+  width: min(100% - var(--shell-gutter), var(--shell-max));
   grid-template-columns: minmax(170px, 1fr) auto minmax(170px, 1fr);
   align-items: center;
   gap: 22px;
