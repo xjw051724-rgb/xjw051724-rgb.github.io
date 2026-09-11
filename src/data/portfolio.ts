@@ -314,7 +314,7 @@ const honorValueSite: PortfolioProject = {
     sections: [
       {
         eyebrow: '01 / INFORMATION ARCHITECTURE',
-        title: '把品牌叙事拆成清晰的浏览路径',
+        title: '清晰的浏览路径',
         introduction: '官网需要同时服务关注项目理念的用户、寻找案例的访客与需要建立合作的机构。方案先按访问意图划分入口，再用统一的内容层级承接品牌故事、人物案例与行动入口，避免信息堆叠造成的阅读中断。',
         bullets: [
           'PC 端以首屏价值表达、项目内容、案例沉淀和合作入口构成连续浏览路径。',
@@ -324,7 +324,7 @@ const honorValueSite: PortfolioProject = {
       },
       {
         eyebrow: '02 / INTERACTION DESIGN',
-        title: '用可解释的交互降低浏览成本',
+        title: '降低浏览成本的交互',
         introduction: '交互不是单独的装饰层，而是服务于页面扫描、信息定位和行动转化。通过卡片悬浮、锚点定位、层级切换和状态反馈，让不同设备上的用户都能快速判断“下一步能做什么”。',
         bullets: [
           '规范首屏、导航、内容卡片、筛选与表单等高频组件的默认、悬停、加载与异常状态。',
@@ -336,7 +336,7 @@ const honorValueSite: PortfolioProject = {
       },
       {
         eyebrow: '03 / DELIVERY VALUE',
-        title: '把一次设计交付变成可持续迭代的框架',
+        title: '可持续迭代的设计框架',
         introduction: '最终交付不止是页面原型，还包括双端信息架构、组件状态、内容录入规则与迭代优先级。运营团队可以在同一框架内持续上线新内容，产品和研发也能按统一标准评估成本与风险。',
         metrics: [
           { label: '核心页面覆盖', value: '100%' },
@@ -393,7 +393,7 @@ const suileyouModuleSystem: PortfolioProject = {
       },
       {
         eyebrow: '03 / DELIVERY FLOW',
-        title: '从配置到上线，缩短为可控的运营闭环',
+        title: '可控的运营闭环',
         introduction: '我将活动策划过程拆成“目标与人群—组件选型—规则配置—预览校验—灰度上线—数据复盘”六步，并把常见规则沉淀成模板，确保效率提升不以体验和稳定性为代价。',
         bullets: [
           '按活动目标选择主玩法与辅助玩法，避免为堆玩法而堆玩法。',
@@ -403,7 +403,7 @@ const suileyouModuleSystem: PortfolioProject = {
       },
       {
         eyebrow: '04 / BUSINESS VALUE',
-        title: '效率、稳定性与转化同时可衡量',
+        title: '效率、稳定与转化可衡量',
         introduction: '系统稳定运行两年，累计承接 120+ 场活动。单活动交付从 10–14 天压缩至 0.5–1 天，在高并发活动中保持 P0/P1 为 0；通过更快的方案迭代，核心业务转化率平均提升 28%。',
         metrics: [
           { label: '研发成本节省', value: '85%+' },
@@ -413,7 +413,7 @@ const suileyouModuleSystem: PortfolioProject = {
       },
       {
         eyebrow: '05 / ENABLEMENT',
-        title: '把经验转成可复制的组织资产',
+        title: '可复制的组织资产',
         introduction: '除了搭建工具，也同步沉淀方法和使用规范。通过《活动模组配置白皮书》、20+ 经典模板与跨团队培训，让不同业务能够在统一标准下自助复刻。',
         bullets: [
           '沉淀节庆、促活、留存等 20+ 经典活动模板，减少从空白页开始的决策成本。',
@@ -450,7 +450,7 @@ const cloudGamingBenchmark: PortfolioProject = {
     sections: [
       {
         eyebrow: '01 / RESEARCH FRAMEWORK',
-        title: '建立可复用的 5 : 3 : 2 评测框架',
+        title: '可复用的 5:3:2 评测框架',
         introduction: '报告不以“功能多少”做单点比较，而是用核心功能、运营侧、辅助功能三类指标并按 5 : 3 : 2 加权，兼顾用户完成一次云游戏体验的完整旅程与平台长期运营能力。',
         bullets: [
           '核心功能：重点游戏启动速度、资源库广度和关键能力覆盖。',
@@ -460,7 +460,7 @@ const cloudGamingBenchmark: PortfolioProject = {
       },
       {
         eyebrow: '02 / EXPERIENCE',
-        title: '把“能玩”拆成用户可感知的体验细节',
+        title: '拆出用户可感知的体验细节',
         introduction: '在 17 款平台的同类游戏测试中，随乐游进入第一梯队；以《赛博朋克 2077》为例，产品加载由 9.3 秒优化到 4.9 秒，并在具备该游戏的 6 款产品中保持最快。',
         bullets: [
           '将“连接云端—展示 PC 画面—进入游戏主菜单”拆开记录，避免总时长掩盖真正的体验瓶颈。',
@@ -490,7 +490,7 @@ const cloudGamingBenchmark: PortfolioProject = {
       },
       {
         eyebrow: '05 / OUTPUT',
-        title: '让报告成为可执行的优先级清单',
+        title: '可执行的优先级清单',
         introduction: '最终交付不仅是一份排名表，更是可落地的优化路线：加载页补充游戏说明、排队到号增加提醒、移动端完善输入辅助、社区采用精细化分群，并持续用季度口径复测验证效果。',
       },
     ],
@@ -524,7 +524,7 @@ const codeBreakConceptSite: PortfolioProject = {
     sections: [
       {
         eyebrow: '01 / LAUNCH STRATEGY',
-        title: '用概念站把首曝流量沉淀下来',
+        title: '沉淀首曝流量',
         introduction: '新游首曝的核心不是一次性制造声量，而是尽早识别对题材、世界观和玩法有兴趣的人群。概念站承担了首曝信息承接、内容探索、线索收集与后续触达四项任务，让不同渠道流量进入同一条可观察的转化链路。',
         bullets: [
           '以世界观主张、机甲视觉与核心悬念构成首屏表达，保证用户进入后能快速理解产品记忆点。',
@@ -534,7 +534,7 @@ const codeBreakConceptSite: PortfolioProject = {
       },
       {
         eyebrow: '02 / INTERACTION JOURNEY',
-        title: '彩蛋探索与共研招募同时发生',
+        title: '彩蛋探索与共研招募',
         introduction: '页面以“探索—解锁—表达—报名”为递进流程。用户在发现信息的过程中完成轻量任务，再被引导留下偏好与测试意愿，既不打断内容体验，也让每一步都有可衡量的运营价值。',
         bullets: [
           '彩蛋解锁：将角色、武器与世界观内容拆成可探索单元，提升主动浏览比例。',
@@ -546,7 +546,7 @@ const codeBreakConceptSite: PortfolioProject = {
       },
       {
         eyebrow: '03 / GROWTH RESULTS',
-        title: '从内容热度到测试名单的转化闭环',
+        title: '内容热度到测试名单',
         introduction: '通过渠道落地页参数、站内任务事件和表单状态追踪，将首曝传播拆成曝光、访问、探索、留资与招募确认五层漏斗。运营不只关注总访问，也能看到哪些内容和入口真正带来高质量用户。',
         metrics: [
           { label: '访问到互动完成', value: '51.8%' },
