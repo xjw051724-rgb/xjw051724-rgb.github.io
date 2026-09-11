@@ -296,7 +296,7 @@ const honorValueSite: PortfolioProject = {
   title: '王者向上官网｜双端高保真交互设计',
   summary: '围绕 PC/M 双端信息架构、品牌内容与商务入口，完成高保真原型及交互规范，让官网浏览路径更清晰、信息承接更一致。',
   tags: ['高保真交互', '双端响应', '信息架构', '原型规范'],
-  cover: '/images/portfolio/honor-value-cover-v3-optimized.jpg',
+  cover: '/images/portfolio/honor-value-cover-v3-optimized.png',
   interaction: '/images/portfolio/honor-value-interaction-optimized.jpg',
   interactionMode: 'modal',
   showInteractionCta: true,
