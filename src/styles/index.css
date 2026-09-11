@@ -288,7 +288,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 .portfolio-contact { margin-top: 132px; padding: 70px 0; background: linear-gradient(135deg, #eff8ff, #f9fcff 57%, #eaf5ff); }
 .portfolio-contact__shell { display: grid; grid-template-columns: minmax(560px, 1fr) minmax(580px, .94fr); gap: clamp(40px, 5vw, 78px); align-items: center; }
 .portfolio-contact__copy > p { margin: 0; color: #4a8bde; font-size: .72rem; font-weight: 790; letter-spacing: .15em; }
-.portfolio-contact__copy h2 { max-width: 760px; margin: 13px 0; color: #112d57; font-size: clamp(2.15rem, 3.25vw, 3.72rem); font-weight: 760; letter-spacing: .06em; line-height: 1.07; white-space: nowrap; }
+.portfolio-contact__copy h2 { max-width: 760px; margin: 13px 0; color: #112d57; font-size: clamp(1.95rem, 2.55vw, 3rem); font-weight: 760; letter-spacing: .06em; line-height: 1.12; white-space: nowrap; }
 .portfolio-contact__copy > span { display: block; max-width: none; color: #5d7698; font-size: clamp(.89rem, 1.1vw, 1rem); line-height: 1.8; white-space: nowrap; }
 .portfolio-contact__panel { display: grid; grid-template-columns: minmax(188px, 220px) minmax(0, 1fr); gap: clamp(18px, 2vw, 28px); border: 1px solid rgba(89, 151, 227, .24); border-radius: 24px; padding: 22px; background: rgba(255, 255, 255, .76); box-shadow: 0 20px 54px rgba(48, 112, 189, .1); backdrop-filter: blur(14px); }
 .portfolio-contact__wechat { display: flex; align-items: stretch; }
@@ -327,8 +327,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 .project-detail__data-disclosure { display: inline-flex; margin: 19px 0 -10px; border: 1px solid #d7e9fb; border-radius: 999px; padding: 5px 9px; color: #6d8cae; background: rgba(248, 252, 255, .9); font-size: .66rem; font-weight: 720; letter-spacing: .06em; }
 .project-detail__metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 21px; }
 .project-detail__metrics article { min-height: 103px; padding: 19px; border: 1px solid #dceafb; border-radius: 17px; background: rgba(255, 255, 255, .7); }
-.project-detail__metrics span, .project-detail__metrics small { display: block; color: #7891af; font-size: .71rem; }
-.project-detail__metrics strong { display: block; margin: 9px 0 0; color: #183965; font-size: clamp(1.15rem, 1.75vw, 1.7rem); letter-spacing: -.04em; }
+.project-detail__metrics span, .project-detail__metrics small { display: block; color: #4a6a90; font-size: .72rem; font-weight: 650; }
+.project-detail__metrics strong { display: block; margin: 9px 0 0; color: #1769cc; font-size: clamp(1.2rem, 1.85vw, 1.85rem); font-weight: 820; letter-spacing: -.04em; }
 .project-detail__sections { display: grid; gap: 18px; margin-top: 74px; }
 .project-detail__sections > article { display: grid; grid-template-columns: minmax(300px, .48fr) minmax(0, 1fr); gap: 54px; padding: 34px 0; border-top: 1px solid #dceafa; }
 .project-detail__sections header span { color: #4d8fe0; font-size: .68rem; font-weight: 800; letter-spacing: .12em; }
@@ -340,8 +340,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 .project-detail__section-content > img { display: block; width: min(100%, 940px); margin-top: 24px; border: 1px solid #d9eafa; border-radius: 16px; background: #ffffff; box-shadow: 0 14px 32px rgba(38, 93, 150, .1); }
 .project-detail__section-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 21px; }
 .project-detail__section-metrics > div { padding: 15px; border-radius: 13px; background: #f0f7ff; }
-.project-detail__section-metrics span { display: block; color: #7691b2; font-size: .69rem; }
-.project-detail__section-metrics strong { display: block; margin-top: 5px; color: #255b99; font-size: 1.1rem; }
+.project-detail__section-metrics span { display: block; color: #4a6a90; font-size: .7rem; font-weight: 650; }
+.project-detail__section-metrics strong { display: block; margin-top: 5px; color: #0f4a8a; font-size: 1.15rem; font-weight: 800; }
 
 @media (max-width: 980px) {
   .portfolio-hero { min-height: auto; padding-top: 116px; }
