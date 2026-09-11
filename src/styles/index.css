@@ -101,12 +101,6 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 
 .portfolio-nav__brand { position: relative; justify-self: start; padding: 0 !important; }
 .portfolio-nav__brand img { display: block; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, .78); border-radius: 50%; object-fit: cover; box-shadow: 0 8px 20px rgba(28, 89, 150, .14); }
-.portfolio-nav__qr { position: absolute; top: -2px; left: calc(100% + 14px); z-index: 40; width: 160px; padding: 10px 10px 12px; border-radius: 14px; background: #ffffff; box-shadow: 0 12px 34px rgba(28, 89, 150, .18); opacity: 0; pointer-events: none; transform: translateY(-6px); transition: opacity .24s ease, transform .24s ease; }
-.portfolio-nav__qr::before { position: absolute; top: 14px; left: -6px; width: 12px; height: 12px; content: ""; transform: rotate(45deg); background: #ffffff; box-shadow: -3px 3px 8px rgba(28, 89, 150, .08); }
-.portfolio-nav__qr-label { display: block; margin-bottom: 6px; color: #2c6fc4; font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-align: center; }
-.portfolio-nav__qr img { position: relative; width: 100%; height: auto; border: 0; border-radius: 8px; box-shadow: none; }
-.portfolio-nav__brand:hover .portfolio-nav__qr,
-.portfolio-nav__brand:focus-within .portfolio-nav__qr { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .portfolio-nav__sound { justify-self: end; }
 .portfolio-nav__links { justify-self: center; display: flex; align-items: center; gap: clamp(18px, 2.2vw, 42px); }
 .portfolio-nav button {
@@ -326,7 +320,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 .project-detail__back { display: inline-flex; align-items: center; gap: 7px; border: 0; padding: 8px 0; color: #4c7eb8; background: transparent; font-size: .85rem; font-weight: 760; cursor: pointer; }
 .project-detail__intro { display: grid; grid-template-columns: minmax(0, 1.38fr) minmax(290px, .62fr); gap: clamp(22px, 3.6vw, 60px); align-items: center; margin-top: 32px; padding: clamp(24px, 4vw, 62px); border: 1px solid rgba(133, 182, 235, .3); border-radius: 26px; background: rgba(255, 255, 255, .72); box-shadow: 0 22px 74px rgba(45, 105, 177, .1); }
 .project-detail__intro p { margin: 0; color: #438ce2; font-size: .73rem; font-weight: 800; letter-spacing: .11em; }
-.project-detail__intro h1 { max-width: none; margin: 13px 0 16px; color: #102d58; font-size: clamp(1.85rem, 2.6vw, 3.35rem); font-weight: 780; letter-spacing: .06em; line-height: 1.12; white-space: nowrap; }
+.project-detail__intro h1 { max-width: none; margin: 13px 0 16px; color: #102d58; font-size: clamp(1.6rem, 2.2vw, 2.45rem); font-weight: 780; letter-spacing: .06em; line-height: 1.18; }
 .project-detail__intro > div > span { display: block; max-width: 740px; color: #5d7698; font-size: .98rem; line-height: 1.85; }
 .project-detail__intro figure { min-height: 0; margin: 0; overflow: hidden; border-radius: 18px; background: #e9f4ff; box-shadow: 0 16px 34px rgba(34, 91, 154, .13); }
 .project-detail__intro figure img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
