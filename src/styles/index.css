@@ -334,6 +334,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid #1678ef; outline-offs
 .project-detail__sections header span { color: #4d8fe0; font-size: .68rem; font-weight: 800; letter-spacing: .12em; }
 .project-detail__sections header h2 { margin: 10px 0 0; color: #153660; font-size: clamp(1.05rem, 1.4vw, 1.45rem); font-weight: 760; letter-spacing: .05em; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .project-detail__section-content > p { max-width: 850px; margin: 0; color: #506a8e; font-size: 1rem; line-height: 1.9; }
+.project-detail__section-content .project-detail__highlight { color: #1769cc; font-weight: 800; }
 .project-detail__section-content ul { display: grid; gap: 10px; margin: 20px 0 0; padding: 0; list-style: none; }
 .project-detail__section-content li { position: relative; padding-left: 18px; color: #4f6b90; font-size: .94rem; line-height: 1.75; }
 .project-detail__section-content li::before { position: absolute; top: .67em; left: 0; width: 6px; height: 6px; border-radius: 50%; content: ""; background: #3a8fee; box-shadow: 0 0 0 4px rgba(58, 143, 238, .11); }

@@ -1,10 +1,31 @@
 import { ArrowLeft } from 'lucide-react'
 import { motion } from 'framer-motion'
+import type { ReactNode } from 'react'
 import type { PortfolioProject } from '../data/portfolio'
 
 type ProjectDetailPageProps = {
   project: PortfolioProject
   onBack: () => void
+}
+
+// 高亮正文中的关键数据：约 5 万、150 万、30%、3.2 倍、第 3 名等
+function highlightKeyNumbers(text: string): ReactNode[] {
+  const regex = /((?:约|超|近|达|共|累计)?\s*\d+(?:\.\d+)?(?:\s*[万亿千百十]?\s*(?:万|亿|千|百|十|个|人次|人|元|天|小时|分钟|秒|%|倍|名|位|款|次|项|页|套|组))?)/g
+  const nodes: ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+  while ((match = regex.exec(text)) !== null) {
+    const [fullMatch] = match
+    if (match.index > lastIndex) {
+      nodes.push(<span key={lastIndex}>{text.slice(lastIndex, match.index)}</span>)
+    }
+    nodes.push(<strong key={match.index} className="project-detail__highlight">{fullMatch}</strong>)
+    lastIndex = match.index + fullMatch.length
+  }
+  if (lastIndex < text.length) {
+    nodes.push(<span key={lastIndex}>{text.slice(lastIndex)}</span>)
+  }
+  return nodes
 }
 
 export function ProjectDetailPage({ project, onBack }: ProjectDetailPageProps) {
@@ -41,8 +62,8 @@ export function ProjectDetailPage({ project, onBack }: ProjectDetailPageProps) {
             <motion.article animate={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 18 }} key={section.title} transition={{ duration: .4, delay: index * .04 }}>
               <header><span>{section.eyebrow}</span><h2>{section.title}</h2></header>
               <div className="project-detail__section-content">
-                <p>{section.introduction}</p>
-                {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
+                <p>{highlightKeyNumbers(section.introduction)}</p>
+                {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{highlightKeyNumbers(bullet)}</li>)}</ul> : null}
                 {section.metrics ? (
                   <div className="project-detail__section-metrics">
                     {section.metrics.map((metric) => <div key={metric.label}><span>{metric.label}</span><strong>{metric.value}</strong></div>)}
