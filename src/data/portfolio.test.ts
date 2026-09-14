@@ -57,11 +57,11 @@ describe('source-backed portfolio data', () => {
 
   it('maps detail paths to source-backed projects', () => {
     expect(getProjectFromPath('/projects/mengniu-worldcup')?.title).toContain('蒙牛低温')
-    expect(getProjectFromPath('/projects/honor-value-site')?.interactionMode).toBe('modal')
+    expect(getProjectFromPath('/projects/honor-value-site')?.interactionMode).toBe('detail')
     expect(getProjectFromPath('/projects/suileyou-module-system')?.detail?.metrics).toHaveLength(4)
     expect(getProjectFromPath('/projects/cloud-gaming-benchmark')?.title).toContain('竞品测评')
     expect(getProjectFromPath('/projects/suileyou-new-year-fun')?.title).toBe('随乐游｜新年乐翻天')
-    expect(getProjectFromPath('/projects/code-break-concept-site')?.showInteractionCta).toBe(true)
+    expect(getProjectFromPath('/projects/code-break-concept-site')?.showInteractionCta).toBeFalsy()
     expect(getProjectFromPath('/projects/suileyou-new-year-fun')?.detail?.sections).toHaveLength(5)
   })
 })

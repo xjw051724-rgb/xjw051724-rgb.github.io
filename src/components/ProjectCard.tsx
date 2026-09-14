@@ -1,4 +1,4 @@
-import { ArrowUpRight, Eye } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import type { PortfolioPlaceholder, PortfolioProject } from '../data/portfolio'
 
 type ProjectCardProps = {
@@ -21,8 +21,6 @@ export function ProjectCard({ item, onOpenProject, onOpenPreview }: ProjectCardP
     )
   }
 
-  const canPreviewInteraction = item.interactionMode === 'modal'
-  const showInteractionCta = canPreviewInteraction && item.showInteractionCta
   const openProject = () => onOpenProject(item)
 
   return (
@@ -53,10 +51,18 @@ export function ProjectCard({ item, onOpenProject, onOpenPreview }: ProjectCardP
             {item.tags.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
           </div>
           <div className="project-card__actions">
-            {showInteractionCta ? (
-              <button aria-label={`查看 ${item.title} 交互稿`} className="project-card__interaction-button" data-tooltip={`查看 ${item.title} 交互稿`} onClick={(event) => { event.stopPropagation(); onOpenPreview(item) }} type="button">
-                <Eye aria-hidden="true" size={15} strokeWidth={1.8} /> 查看交互稿
-              </button>
+            {item.externalUrl ? (
+              <a
+                aria-label={`${item.externalLabel ?? '查看官网'} ${item.title}`}
+                className="project-card__interaction-button"
+                data-tooltip={item.externalLabel ?? '查看官网'}
+                href={item.externalUrl}
+                rel="noreferrer"
+                target="_blank"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <ArrowUpRight aria-hidden="true" size={15} strokeWidth={1.8} /> {item.externalLabel ?? '查看官网'}
+              </a>
             ) : null}
             <button aria-label={`${item.ctaLabel} ${item.title}`} data-tooltip={`${item.ctaLabel}`} onClick={(event) => { event.stopPropagation(); openProject() }} type="button">
                 {item.ctaLabel}

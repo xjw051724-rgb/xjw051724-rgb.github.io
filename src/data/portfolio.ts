@@ -41,6 +41,7 @@ export type PortfolioProject = {
   showInteractionCta?: boolean
   ctaLabel: '查看详情' | '查看官网' | '查看概念站'
   externalUrl?: string
+  externalLabel?: string
   detail?: {
     lead: string
     dataDisclosure?: string
@@ -298,9 +299,9 @@ const honorValueSite: PortfolioProject = {
   tags: ['高保真交互', '双端响应', '信息架构', '原型规范'],
   cover: '/images/portfolio/honor-value-cover-v3-optimized.png',
   interaction: '/images/portfolio/honor-value-interaction-optimized.jpg',
-  interactionMode: 'modal',
-  showInteractionCta: true,
-  ctaLabel: '查看官网',
+  interactionMode: 'detail',
+  ctaLabel: '查看详情',
+  externalLabel: '查看官网',
   externalUrl: 'https://value.qq.com/index.html',
   detail: {
     lead: '以“找得到、看得懂、能转化”为目标重构双端官网路径，把品牌表达、榜样内容和商务合作入口组织为同一套可扩展的信息架构。',
@@ -508,9 +509,9 @@ const codeBreakConceptSite: PortfolioProject = {
   tags: ['新游宣发', '概念站运营', '玩家共研', '获客转化'],
   cover: '/images/portfolio/code-break-cover-v3-optimized.jpg',
   interaction: '/images/portfolio/code-break-interaction-optimized.jpg',
-  interactionMode: 'modal',
-  showInteractionCta: true,
-  ctaLabel: '查看概念站',
+  interactionMode: 'detail',
+  ctaLabel: '查看详情',
+  externalLabel: '查看概念站',
   externalUrl: 'https://www.xinhuozg.com/zt/2022/01/01/index/?posid=2',
   detail: {
     lead: '把首曝兴趣沉淀为可触达的种子用户，以概念站承接内容平台热度，并通过世界观彩蛋、共研招募与分层触达推进用户从“看见”到“留下”。',
