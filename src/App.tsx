@@ -7,6 +7,8 @@ import { PortfolioHero } from './components/PortfolioHero'
 import { ProjectDetailPage } from './components/ProjectDetailPage'
 import { ProjectSection } from './components/ProjectSection'
 import { PortfolioContentProvider, usePortfolioContent } from './content-editor/PortfolioContentProvider'
+import { isMobile } from './utils/device'
+import { MobileApp } from './components/MobileApp'
 
 const scrollToSection = (id: string) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -71,5 +73,8 @@ function PortfolioSurface() {
 }
 
 export default function App() {
+  if (isMobile()) {
+    return <PortfolioContentProvider><MobileApp /></PortfolioContentProvider>
+  }
   return <PortfolioContentProvider><PortfolioSurface /></PortfolioContentProvider>
 }
